@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scenery with HTML & CSS</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #87CEEB; /* sky blue */
+    }
+
+    .scene {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .sun {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+      width: 100px;
+      height: 100px;
+      background: orange;
+      border-radius: 50%;
+    }
+
+    .grass {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 150px;
+      background: green;
+    }
+
+    .hill {
+      position: absolute;
+      bottom: 100px;
+      width: 300px;
+      height: 150px;
+      background: #228B22;
+      border-radius: 50%;
+    }
+
+    .hill1 {
+      left: 50px;
+    }
+
+    .hill2 {
+      left: 200px;
+    }
+
+    .hill3 {
+      left: 400px;
+    }
+
+    .river {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      width: 200px;
+      height: 150px;
+      background: #1E90FF;
+      border-top-left-radius: 100% 100px;
+      border-top-right-radius: 100% 100px;
+      transform: skewX(-10deg);
+      opacity: 0.8;
+    }
+
+    .house {
+      position: absolute;
+      bottom: 150px;
+      left: 100px;
+      width: 150px;
+      height: 120px;
+      background: #8B4513;
+    }
+
+    .roof {
+      position: absolute;
+      bottom: 270px;
+      left: 90px;
+      width: 0;
+      height: 0;
+      border-left: 85px solid transparent;
+      border-right: 85px solid transparent;
+      border-bottom: 60px solid #A52A2A;
+    }
+
+    .door {
+      position: absolute;
+      bottom: 150px;
+      left: 160px;
+      width: 30px;
+      height: 60px;
+      background: #654321;
+    }
+
+    .window {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: #ADD8E6;
+    }
+
+    .window1 {
+      bottom: 210px;
+      left: 115px;
+    }
+
+    .window2 {
+      bottom: 210px;
+      left: 195px;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="sun"></div>
+    <div class="hill hill1"></div>
+    <div class="hill hill2"></div>
+    <div class="hill hill3"></div>
+    <div class="river"></div>
+    <div class="grass"></div>
+
+    <div class="house"></div>
+    <div class="roof"></div>
+    <div class="door"></div>
+    <div class="window window1"></div>
+    <div class="window window2"></div>
+  </div>
+</body>
+</html>
