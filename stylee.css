@@ -1,0 +1,178 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: palegoldenrod;
+  color: #0c0101;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 0; /* Reduced padding to prevent button-like appearance */
+  transition: color 0.3s; /* Only transition color change */
+  display: block;
+}
+
+nav ul li a:hover {
+  color: palegoldenrod; /* Just change color on hover */
+  text-decoration: none; /* Remove underline if you prefer */
+  background: transparent; /* Ensure no background change */
+}
+
+/* Hamburger menu */
+#menu-btn {
+  display: none;
+  background: gray;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+/* Main content */
+main {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background: lightgrey;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+/* Image specific styles */
+.leader-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 2px solid palegoldenrod;
+}
+
+.event-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header h1 {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  nav {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    position: relative;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+  }
+
+  nav ul li:last-child a {
+    border-bottom: none;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    height: 80px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+}
